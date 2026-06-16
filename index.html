@@ -69,6 +69,47 @@
           >Visit Carers UK</a
         >
       </aside>
+      <section id="contact">
+        <h2>Get in touch</h2>
+        <p>Have a question or want to share a tip? send me a message</p>
+        <form action="/contact" method="POST">
+          <label for="fullname">Full Name</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Your full name"
+            minlength="2"
+            maxlength="50"
+            required
+          />
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your@email.com"
+            required
+          />
+          <label for="role">Your Role</label>
+          <select id="role" name="role">
+            <option value="">--Select your role--</option>
+            <option value="support-worker">Support Worker</option>
+            <option value="nurse">Nurse</option>
+            <option value="care-manager">Care Manager</option>
+            <option value="unpaid-carer">Unpaid Carer</option>
+          </select>
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message here..."
+            rows="5"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
     </main>
     <footer>
       <p>Built by Esther &copy; 2026</p>
