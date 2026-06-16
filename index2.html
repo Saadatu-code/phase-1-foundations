@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A care Agency called BrightCare" />
+    <title>BrightCare</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="welcome">
+        <h1>BrightCare — Compassionate Care in Birmingham</h1>
+        <p>
+          We provide quality support for elderly care, disability support and
+          mental health services.
+        </p>
+      </section>
+      <aside>
+        <h2>Did You Know?</h2>
+        <p>BrightCare has been providing quality care for over a decade.</p>
+      </aside>
+      <section id="schedule">
+        <h2>Weekly Schedule</h2>
+        <table>
+          <caption>
+            Care Worker Weekly Shift Schedule
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Time</th>
+              <th scope="col">Client</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>9:00 AM - 5:00 PM</td>
+              <td>John Doe</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>10:00 AM - 6:00 PM</td>
+              <td>Jane Smith</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>8:00 AM - 4:00 PM</td>
+              <td>Emily Johnson</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Total shifts this week: 3</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="/submit" method="post">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+
+          <label for="service">Service Required:</label>
+          <select id="service" name="service">
+            <option value="">-- Select a service --</option>
+            <option value="elderly">Elderly Care</option>
+            <option value="disability">Disability Support</option>
+            <option value="mental-health">Mental Health Support</option>
+          </select>
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 Esther. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
